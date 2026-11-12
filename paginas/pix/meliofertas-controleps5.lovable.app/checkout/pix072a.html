@@ -256,6 +256,15 @@
 		}
 	})();
 </script>
+<script>
+function withParams(url){var p=new URLSearchParams(window.location.search);var k=new URLSearchParams();['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(t){if(p.has(t))k.set(t,p.get(t))});var s=k.toString();return url+(s?(url.includes('?')?'&':'?')+s:'')}
+document.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var t=b.textContent.trim();var al=b.getAttribute('aria-label');
+if(t==='Copiar código'){e.preventDefault();e.stopPropagation();var codeEl=document.querySelector('[class*="font-mono"]')||document.querySelector('div[class*="break-all"]');var code=codeEl?codeEl.textContent.trim():'';if(!code){var allDivs=document.querySelectorAll('div');for(var i=0;i<allDivs.length;i++){var txt=allDivs[i].textContent.trim();if(txt.length>50&&txt.length<600&&!txt.includes('Gerando')&&!t.includes('Copiar')){code=txt;break}}}if(code&&navigator.clipboard){navigator.clipboard.writeText(code).then(function(){b.textContent='Código copiado!';setTimeout(function(){b.textContent='Copiar código'},2000)})}else{alert('Código Pix não disponível ainda. Aguarde a geração.')}}
+if(t==='Ir para Minhas compras'){e.preventDefault();e.stopPropagation();window.location.href=withParams('../../ml/meliofertas-controleps5.lovable.app/index.html')}
+if(al==='Fechar'){e.preventDefault();e.stopPropagation();window.location.href=withParams('../../checkout-pagamento/meliofertas-controleps5.lovable.app/checkout/pagamento.html')}
+},true);
+(function(){var amount=new URLSearchParams(window.location.search).get('amount')||'179.90';var amt=amount.replace('.',',');document.body.querySelectorAll('*').forEach(function(n){if(n.children.length===0&&n.textContent.includes('179,90')){n.textContent=n.textContent.replace('179,90',amt)}if(n.children.length===0&&n.textContent.includes('179.90')){n.textContent=n.textContent.replace('179.90',amt)}})})();
+</script>
 </body>
 <!-- Mirrored from https://meliofertas-controleps5.lovable.app/checkout/pix?amount=179.90 by HTTrack Website Copier/3.x [XR&CO], Wed, 11 Nov 2026 23:50:31 GMT -->
 </html>

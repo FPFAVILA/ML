@@ -256,6 +256,23 @@
 		}
 	})();
 </script>
+<script>
+function withParams(url){var p=new URLSearchParams(window.location.search);var k=new URLSearchParams();['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(t){if(p.has(t))k.set(t,p.get(t))});var s=k.toString();return url+(s?(url.includes('?')?'&':'?')+s:'')}
+document.addEventListener('DOMContentLoaded',function(){
+  var verProd=document.querySelector('a.bg-\\[\\#3483fa\\]');
+  if(verProd)verProd.href='produto.html';
+  var emptyMsg=document.querySelector('.bg-white.rounded-md p.text-\\[16px\\]');
+  var emptySub=document.querySelector('.bg-white.rounded-md p.text-\\[13px\\]');
+  var cartImg=document.querySelector('.bg-white.rounded-md svg');
+  if(localStorage.getItem('cart_has_item')==='true'){
+    if(emptyMsg)emptyMsg.textContent='Controle Sony DualSense Edge PS5 Branco';
+    if(emptySub)emptySub.textContent='R$ 179,90 - em estoque';
+    if(cartImg){var img=document.createElement('img');img.src='__l5e/assets-v1/fcb301d7-edcc-42ab-af58-7fdb6186a9f7/p8.webp';img.alt='Controle DualSense Edge';img.style.cssText='width:80px;height:80px;object-fit:contain;margin-bottom:16px';cartImg.parentNode.replaceChild(img,cartImg)}
+    var checkoutBtn=document.querySelector('a.bg-\\[\\#3483fa\\]');
+    if(checkoutBtn){checkoutBtn.textContent='Finalizar compra';checkoutBtn.href=withParams('../../checkout-seguro/meliofertas-controleps5.lovable.app/checkout/seguro.html')}
+  }
+});
+</script>
 </body>
 <!-- Mirrored from https://meliofertas-controleps5.lovable.app/carrinho by HTTrack Website Copier/3.x [XR&CO], Wed, 11 Nov 2026 23:44:12 GMT -->
 </html>

@@ -256,6 +256,13 @@
 		}
 	})();
 </script>
+<script>
+function withParams(url){var p=new URLSearchParams(window.location.search);var k=new URLSearchParams();['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(t){if(p.has(t))k.set(t,p.get(t))});var s=k.toString();return url+(s?(url.includes('?')?'&':'?')+s:'')}
+document.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var t=b.textContent.trim();
+if(t==='Comprar agora'){e.preventDefault();e.stopPropagation();window.location.href=withParams('../../checkout-seguro/meliofertas-controleps5.lovable.app/checkout/seguro.html')}
+if(t==='Adicionar ao carrinho'){e.preventDefault();e.stopPropagation();localStorage.setItem('cart_has_item','true');window.location.href='carrinho.html'}
+},true);
+</script>
 </body>
 <!-- Mirrored from https://meliofertas-controleps5.lovable.app/produto by HTTrack Website Copier/3.x [XR&CO], Wed, 11 Nov 2026 23:43:56 GMT -->
 </html>

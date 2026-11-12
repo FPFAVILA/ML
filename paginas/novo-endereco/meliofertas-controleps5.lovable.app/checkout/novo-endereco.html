@@ -256,6 +256,13 @@
 		}
 	})();
 </script>
+<script>
+function withParams(url){var p=new URLSearchParams(window.location.search);var k=new URLSearchParams();['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(t){if(p.has(t))k.set(t,p.get(t))});var s=k.toString();return url+(s?(url.includes('?')?'&':'?')+s:'')}
+document.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var t=b.textContent.trim();var al=b.getAttribute('aria-label');
+if(al==='Voltar'){e.preventDefault();e.stopPropagation();window.location.href=withParams('../../checkout-pagamento/meliofertas-controleps5.lovable.app/checkout/pagamento.html')}
+if(t==='Salvar'){e.preventDefault();e.stopPropagation();var cep=document.getElementById('cep')&&document.getElementById('cep').value||'';var rua=document.getElementById('rua')&&document.getElementById('rua').value||'';var num=document.getElementById('numero')&&document.getElementById('numero').value||'';var comp=document.getElementById('complemento')&&document.getElementById('complemento').value||'';var cid=document.getElementById('cidade')&&document.getElementById('cidade').value||'';var est=document.getElementById('estado')&&document.getElementById('estado').value||'';var nome=document.getElementById('nome')&&document.getElementById('nome').value||'';var email=document.getElementById('email')&&document.getElementById('email').value||'';var tel=document.getElementById('telefone')&&document.getElementById('telefone').value||'';if(!cep||!rua||!cid||!est){alert('Preencha os campos obrigatórios.');return}localStorage.setItem('addr_cep',cep);localStorage.setItem('addr_rua',rua);localStorage.setItem('addr_numero',num);localStorage.setItem('addr_complemento',comp);localStorage.setItem('addr_cidade',cid);localStorage.setItem('addr_estado',est);localStorage.setItem('addr_nome',nome);localStorage.setItem('addr_email',email);localStorage.setItem('addr_telefone',tel);window.location.href=withParams('../../checkout-pagamento/meliofertas-controleps5.lovable.app/checkout/pagamento.html')}
+},true);
+</script>
 </body>
 <!-- Mirrored from https://meliofertas-controleps5.lovable.app/checkout/novo-endereco by HTTrack Website Copier/3.x [XR&CO], Wed, 11 Nov 2026 23:49:23 GMT -->
 </html>
