@@ -1,0 +1,19 @@
+PROJETO DA LOJA — ESTRUTURA ORGANIZADA
+
+Páginas principais (arquivos originais preservados):
+1. paginas/ml/meliofertas-controleps5.lovable.app/index.html
+2. paginas/produto/meliofertas-controleps5.lovable.app/produto.html
+3. paginas/checkout-seguro/meliofertas-controleps5.lovable.app/checkout/seguro.html
+4. paginas/checkout-pagamento/meliofertas-controleps5.lovable.app/checkout/pagamento.html
+5. paginas/novo-endereco/meliofertas-controleps5.lovable.app/checkout/novo-endereco.html
+6. paginas/pix/meliofertas-controleps5.lovable.app/checkout/pix072a.html
+
+IMPORTANTE:
+- Nenhum texto, cor, imagem, estilo ou layout das páginas foi alterado.
+- Cada etapa mantém seus próprios arquivos assets/imagens e recursos capturados para evitar quebrar referências relativas.
+- As pastas cdn.utmify.com.br foram preservadas onde os caminhos originais esperam encontrá-las.
+- Cópias de cache/log do HTTrack e arquivos HTML falsos criados para representar scripts foram excluídos.
+- As páginas ainda NÃO foram conectadas entre si. Isso será feito depois de conferir cada página e os caminhos.
+- A captura do HTTrack pode não conter serviços externos, APIs ou dados de pagamento; isso será verificado na etapa funcional.
+
+Abra cada página pelo caminho indicado acima. Não abra os arquivos dentro de assets.

@@ -1,0 +1,1 @@
+var e=`/assets/free-shipping-van-BmCQ84nY.webp`;export{e as t};
